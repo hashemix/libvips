@@ -63,9 +63,12 @@ impl From<&[VipsImage]> for VipsArrayImageWrapper {
     #[inline]
     fn from(array: &[VipsImage]) -> Self {
         let len = array.len() as i32;
-        let as_vips = array.iter().map(|v| v.ctx).collect::<Vec<_>>().as_mut_ptr();
+        let mut as_vips: Vec<*mut bindings::VipsImage> = array.iter().map(|v| unsafe {
+            bindings::g_object_ref(v.ctx as *mut c_void);
+            v.ctx
+        }).collect();
         VipsArrayImageWrapper {
-            ctx: unsafe { bindings::vips_array_image_new(as_vips, len) },
+            ctx: unsafe { bindings::vips_array_image_new(as_vips.as_mut_ptr(), len) },
         }
     }
 }
