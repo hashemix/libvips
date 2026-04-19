@@ -448,7 +448,7 @@ impl Parameter {
                 self.param_type.vips_in_type(false)
             ),
             ParamType::ArrayImage => format!(
-                "let ({}_len, mut {}_in) = {{ let len = {}.len(); let mut input = Vec::new(); for img in {} {{ input.push(img.ctx) }} (len as i32, input) }};",
+                "let ({}_len, mut {}_in) = {{ let len = {}.len(); let mut input = Vec::new(); for img in {} {{ bindings::g_object_ref(img.ctx as *mut std::ffi::c_void); input.push(img.ctx) }} (len as i32, input) }};",
                 self.name,
                 self.name,
                 self.name,

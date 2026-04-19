@@ -1500,6 +1500,7 @@ pub fn sum(inp: &mut [VipsImage]) -> Result<VipsImage> {
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -3289,6 +3290,7 @@ pub fn arrayjoin(inp: &mut [VipsImage]) -> Result<VipsImage> {
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -3363,6 +3365,7 @@ pub fn arrayjoin_with_opts(
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -3659,6 +3662,7 @@ pub fn bandjoin(inp: &mut [VipsImage]) -> Result<VipsImage> {
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -3704,6 +3708,7 @@ pub fn bandrank(inp: &mut [VipsImage]) -> Result<VipsImage> {
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -3749,6 +3754,7 @@ pub fn bandrank_with_opts(
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -5012,6 +5018,7 @@ pub fn composite(inp: &mut [VipsImage], mode: &mut [i32]) -> Result<VipsImage> {
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -5096,6 +5103,7 @@ pub fn composite_with_opts(
             let len = inp.len();
             let mut input = Vec::new();
             for img in inp {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
@@ -8266,6 +8274,7 @@ pub fn switch(tests: &mut [VipsImage]) -> Result<VipsImage> {
             let len = tests.len();
             let mut input = Vec::new();
             for img in tests {
+                bindings::g_object_ref(img.ctx as *mut std::ffi::c_void);
                 input.push(img.ctx)
             }
             (len as i32, input)
