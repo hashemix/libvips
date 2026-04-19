@@ -584,7 +584,7 @@ impl Parameter {
     fn default(&self) -> String {
         match self.param_type {
             ParamType::Str if self.description.contains("ICC") => {
-                format!("{}: String::from(\"sRGB\")", self.name)
+                format!("{}: String::from(\"none\")", self.name)
             }
             _ => format!("{}: {}", self.name, self.param_type.default()),
         }

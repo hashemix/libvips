@@ -12790,7 +12790,7 @@ impl std::default::Default for CsvsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -12889,7 +12889,7 @@ impl std::default::Default for CsvsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -12985,7 +12985,7 @@ impl std::default::Default for MatrixsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13076,7 +13076,7 @@ impl std::default::Default for MatrixsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13165,7 +13165,7 @@ impl std::default::Default for MatrixprintOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13252,7 +13252,7 @@ impl std::default::Default for RawsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13348,7 +13348,7 @@ impl std::default::Default for RawsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13443,7 +13443,7 @@ impl std::default::Default for RawsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13534,7 +13534,7 @@ impl std::default::Default for VipssaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13625,7 +13625,7 @@ impl std::default::Default for VipssaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13733,7 +13733,7 @@ impl std::default::Default for PpmsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13856,7 +13856,7 @@ impl std::default::Default for PpmsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -13962,7 +13962,7 @@ impl std::default::Default for RadsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14058,7 +14058,7 @@ impl std::default::Default for RadsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14153,7 +14153,7 @@ impl std::default::Default for RadsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14276,7 +14276,7 @@ impl std::default::Default for GifsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14448,7 +14448,7 @@ impl std::default::Default for GifsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14623,7 +14623,7 @@ impl std::default::Default for GifsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14799,7 +14799,7 @@ impl std::default::Default for PngsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -14972,7 +14972,7 @@ impl std::default::Default for PngsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -15148,7 +15148,7 @@ impl std::default::Default for PngsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -15322,7 +15322,7 @@ impl std::default::Default for JpegsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -15514,7 +15514,7 @@ impl std::default::Default for JpegsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -15713,7 +15713,7 @@ impl std::default::Default for JpegsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -15906,7 +15906,7 @@ impl std::default::Default for JpegsaveMimeOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -16120,7 +16120,7 @@ impl std::default::Default for WebpsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -16352,7 +16352,7 @@ impl std::default::Default for WebpsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -16599,7 +16599,7 @@ impl std::default::Default for WebpsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -16840,7 +16840,7 @@ impl std::default::Default for WebpsaveMimeOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -17112,7 +17112,7 @@ impl std::default::Default for TiffsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -17411,7 +17411,7 @@ impl std::default::Default for TiffsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -17733,7 +17733,7 @@ impl std::default::Default for TiffsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -17988,7 +17988,7 @@ impl std::default::Default for HeifsaveOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -18159,7 +18159,7 @@ impl std::default::Default for HeifsaveBufferOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
@@ -18333,7 +18333,7 @@ impl std::default::Default for HeifsaveTargetOptions {
             keep: ForeignKeep::All,
             background: Vec::new(),
             page_height: i32::from(0),
-            profile: String::from("sRGB"),
+            profile: String::from("none"),
         }
     }
 }
